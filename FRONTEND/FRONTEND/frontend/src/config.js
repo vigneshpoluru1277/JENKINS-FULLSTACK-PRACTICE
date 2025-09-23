@@ -1,5 +1,5 @@
 const config = {
-  url: "http://localhost:8080"  // backend Spring Boot URL
+  url: "http://localhost:8080/springbootlearning"  // backend Spring Boot URL
 };
 
 export default config;
