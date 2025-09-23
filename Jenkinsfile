@@ -14,22 +14,23 @@ pipeline {
         }
 
         // ===== FRONTEND DEPLOY =====
-        stage('Deploy Frontend to Tomcat') {
-            steps {
-                bat '''
-                if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning" (
-                    rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
-                )
-                mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
-                xcopy /E /I /Y reactlearning\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
-                '''
-            }
-        }
+       stage('Deploy Frontend to Tomcat') {
+    steps {
+        bat '''
+            if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning" (
+                rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
+            )
+            mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
+            xcopy /E /I /Y FRONTEND\\FRONTEND\\frontend\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlearning"
+        '''
+    }
+}
+
 
         // ===== BACKEND BUILD =====
         stage('Build Backend') {
             steps {
-                dir('LibraryManagementSystem') {
+                dir('BACKEND/BACKEND/LibraryBookManagementSystem') {
                     bat 'mvn clean package'
                 }
             }
@@ -45,7 +46,7 @@ pipeline {
                 if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\springbootlearning" (
                     rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\springbootlearning"
                 )
-                copy "springbootlearning\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\"
+                copy "BACKEND\\BACKEND\\LibraryBookManagementSystem\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\"
                 '''
             }
         }
