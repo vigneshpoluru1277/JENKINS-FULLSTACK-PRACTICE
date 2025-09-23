@@ -8,6 +8,7 @@ public class LibraryBookManagementSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryBookManagementSystemApplication.class, args);
+		
 	}
 
 }
