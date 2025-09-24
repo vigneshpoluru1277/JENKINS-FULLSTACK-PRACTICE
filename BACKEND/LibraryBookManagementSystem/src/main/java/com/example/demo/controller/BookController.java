@@ -21,17 +21,12 @@ import com.example.demo.repository.BookRepository;
 public class BookController {
 	
     private final BookRepository repo;
-     @GetMapping("/")
-    public String home() 
-    {
-        return "Jenkins Full Stack Deployment Demo";
-    }
-
+    
     public BookController(BookRepository repo) {
         this.repo = repo;
     }
 
-    @GetMapping("/list")
+    @GetMapping
     public List<Book> getAll() {
         return repo.findAll();
     }
