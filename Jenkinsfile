@@ -6,7 +6,7 @@ pipeline {
         // ===== FRONTEND BUILD =====
         stage('Build Frontend') {
             steps {
-                dir('FRONTEND/FRONTEND/frontend') {
+                dir('FRONTEND') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
@@ -30,7 +30,7 @@ pipeline {
         // ===== BACKEND BUILD =====
         stage('Build Backend') {
             steps {
-                dir('BACKEND/BACKEND/LibraryBookManagementSystem') {
+                dir('BACKEND/LibraryBookManagementSystem') {
                     bat 'mvn clean package'
                 }
             }

@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #ffffff;           /* white background */
+  color: #000000;                /* default black text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Green heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #16a34a;   /* Tailwind Green-600 */
+}
+
+/* Container (full screen white area) */
+.container {
+  background: #ffffff;
+  flex: 1;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Inner card for form + table */
+.inner-card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #000000; /* black text inside */
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff; /* white text */
+}
+
+button.add {
+  background: #16a34a; /* green */
+}
+button.add:hover {
+  background: #22c55e;
+}
+
+button.edit {
+  background: #2563eb; /* blue */
+}
+button.edit:hover {
+  background: #3b82f6;
+}
+
+button.delete {
+  background: #dc2626; /* red */
+}
+button.delete:hover {
+  background: #ef4444;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #f3f4f6;
+  color: #000000;  /* black */
+}
+
+td {
+  background: #ffffff;
+  color: #000000;  /* black */
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff;             /* white text */
+  background: #2563eb;        /* blue */
+}
+
+button:hover {
+  background: #1d4ed8;        /* darker blue on hover */
+}
+
