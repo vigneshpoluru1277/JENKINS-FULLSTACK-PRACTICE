@@ -7,10 +7,11 @@ function BookManager() {
   const [form, setForm] = useState({ title: "", author: "", isbn: "" });
   const [editingId, setEditingId] = useState(null);
 
+
   // Fetch all books
   const fetchBooks = async () => {
     try {
-      const response = await axios.get(`${config.url}/books`);
+      const response = await axios.get(`${config.url}/all`);
       setBooks(response.data);
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -26,15 +27,18 @@ function BookManager() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+
   // Add or update book
   const addOrUpdateBook = async (e) => {
     e.preventDefault();
     try {
       if (editingId) {
-        await axios.put(`${config.url}/books/${editingId}`, form);
+        // Update book
+        await axios.put(`${config.url}/update`, { ...form, id: editingId });
         setEditingId(null);
       } else {
-        await axios.post(`${config.url}/books`, form);
+        // Add book
+        await axios.post(`${config.url}/add`, form);
       }
       setForm({ title: "", author: "", isbn: "" });
       fetchBooks();
@@ -43,10 +47,11 @@ function BookManager() {
     }
   };
 
+
   // Delete book
   const deleteBook = async (id) => {
     try {
-      await axios.delete(`${config.url}/books/${id}`);
+      await axios.delete(`${config.url}/delete/${id}`);
       fetchBooks();
     } catch (error) {
       console.error("Error deleting book:", error);

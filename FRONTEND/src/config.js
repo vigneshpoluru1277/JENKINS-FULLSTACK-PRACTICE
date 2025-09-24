@@ -1,6 +1,6 @@
 
 const config = {
-  url: "http://localhost:2030/springbootlearning" // backend Spring Boot URL (no extra path)
+  url: "http://localhost:2030/bookapi" // backend Book API base URL
 };
 
 export default config;
