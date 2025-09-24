@@ -16,16 +16,12 @@ import com.example.demo.model.Book;
 import com.example.demo.repository.BookRepository;
 
 @RestController
-@RequestMapping("/books/")
-@CrossOrigin(origins = "*") // allow React frontend
+@RequestMapping("/books")
+@CrossOrigin(origins = "http://localhost:5173") // allow React frontend
 public class BookController {
 	
     private final BookRepository repo;
-     @GetMapping("/")
-    public String home() 
-    {
-        return "Jenkins Full Stack Deployment Demo";
-    }
+
     public BookController(BookRepository repo) {
         this.repo = repo;
     }
