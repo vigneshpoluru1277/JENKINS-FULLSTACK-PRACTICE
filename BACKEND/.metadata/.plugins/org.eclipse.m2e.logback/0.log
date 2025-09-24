@@ -33,3 +33,26 @@
 2025-09-21 22:06:23,202 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-21 22:06:23,301 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-09-21 22:06:23,311 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\BACKEND\LibraryBookManagementSystem\src\test\resources
+2025-09-24 09:51:12,482 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-09-24 09:52:56,303 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:LibraryBookManagementSystem:0.0.1-SNAPSHOT @ C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\pom.xml.
+2025-09-24 09:52:58,134 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LibraryBookManagementSystem/src/main/java
+2025-09-24 09:52:58,149 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LibraryBookManagementSystem/src/main/resources
+2025-09-24 09:52:58,151 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LibraryBookManagementSystem/src/main/resources
+2025-09-24 09:52:58,155 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LibraryBookManagementSystem/src/test/java
+2025-09-24 09:52:58,159 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LibraryBookManagementSystem/src/test/resources
+2025-09-24 09:52:58,905 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2025-09-24 09:53:03,984 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:53:04,317 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:53:04,331 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\src\test\resources
+2025-09-24 10:10:57,206 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 10:10:57,326 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 10:10:57,332 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\src\test\resources
+2025-09-24 10:17:08,435 [Worker-31: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 10:17:08,567 [Worker-31: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 10:17:08,577 [Worker-31: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\src\test\resources
+2025-09-24 10:17:38,458 [Worker-28: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 10:17:38,471 [Worker-28: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 10:17:38,477 [Worker-28: Launching LibraryBookManagementSystem - LibraryBookManagementSystemApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\src\test\resources
+2025-09-24 10:18:30,324 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 10:18:30,337 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 10:18:30,342 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem\src\test\resources

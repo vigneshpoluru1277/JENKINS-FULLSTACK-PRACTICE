@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\FSAD PROJECT\BACKEND\LibraryBookManagementSystem"/>
 			<item value="C:\FSAD PROJECT\BACKEND"/>
 		</list>
 		<list key="projectNameTemplate">
